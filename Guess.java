@@ -57,9 +57,9 @@ final class Guess {
                 // Calculations
                 if (guess < minGuessValue || guess > maxGuessValue) {
                     System.out.println("Your guess won't count. Guess again.");
-                } else if (guess < randomNumber){
+                } else if (guess < randomNumber) {
                     System.out.println("You guessed too low. Guess again.");
-                } else if (guess > randomNumber){
+                } else if (guess > randomNumber) {
                     System.out.println("You guessed too high. Guess again.");
                 } else {
                     System.out.println("This is not an integer");
@@ -73,7 +73,7 @@ final class Guess {
             } while (guess != RANDOM_NUMBER);
 
             // Outputs.
-            System.out.println("You Guessed Correctly!"); 
+            System.out.println("You Guessed Correctly!");
         } catch (java.util.InputMismatchException ex) {
             System.out.println("That was not a valid input ");
         } finally {
