@@ -38,9 +38,11 @@ final class Guess {
         int guess;
         final int minGuessValue = 1;
         final int maxGuessValue = 6;
+        final int extra = 1;
 
-        // Temporary random number
-        final int randomNumber = 3;
+        // Generate random number and assign it to the variable
+        final int randomNumber = (int) (Math.random() * (maxGuessValue
+            - minGuessValue + extra) + minGuessValue);
 
         // Create scanner objects for inputs.
         final Scanner myObjOne = new Scanner(System.in);
@@ -71,7 +73,7 @@ final class Guess {
                     + " number from 1 to 6 again: ");
                 guess = myObjOne.nextInt();
 
-            } while (guess != RANDOM_NUMBER);
+            } while (guess != randomNumber);
 
             // Outputs.
             System.out.println("You Guessed Correctly!");
