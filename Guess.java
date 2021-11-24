@@ -67,7 +67,8 @@ final class Guess {
                 }
 
                 // Ask for input
-                System.out.println("Guess the same random number from 1 to 6 again: ");
+                System.out.println("Guess the same random"
+                    + " number from 1 to 6 again: ");
                 guess = myObjOne.nextInt();
 
             } while (guess != RANDOM_NUMBER);
