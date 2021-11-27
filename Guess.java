@@ -36,6 +36,8 @@ final class Guess {
     public static void main(final String[] args) {
         // Variables.
         int guess;
+
+        // Constants.
         final int minGuessValue = 1;
         final int maxGuessValue = 6;
         final int extra = 1;
@@ -46,7 +48,6 @@ final class Guess {
 
         // Create scanner objects for inputs.
         final Scanner myObjOne = new Scanner(System.in);
-        final Scanner myObjTwo = new Scanner(System.in);
         // Ask for inputs
         System.out.println("Guess the random number from 1 to 6: ");
         guess = myObjOne.nextInt();
