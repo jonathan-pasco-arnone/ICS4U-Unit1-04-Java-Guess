@@ -38,13 +38,13 @@ final class Guess {
         int guess;
 
         // Constants.
-        final int minGuessValue = 1;
-        final int maxGuessValue = 6;
-        final int extra = 1;
+        final int MIN_GUESS_VALUE = 1;
+        final int MAX_GUESS_VALUE = 6;
+        final int EXTRA = 1;
 
         // Generate random number and assign it to the variable
-        final int randomNumber = (int) (Math.random() * (maxGuessValue
-            - minGuessValue + extra) + minGuessValue);
+        final int randomNumber = (int) (Math.random() * (MAX_GUESS_VALUE
+            - MIN_GUESS_VALUE + EXTRA) + MIN_GUESS_VALUE);
 
         // Create scanner objects for inputs.
         final Scanner myObjOne = new Scanner(System.in);
@@ -58,7 +58,7 @@ final class Guess {
             do {
 
                 // Calculations
-                if (guess < minGuessValue || guess > maxGuessValue) {
+                if (guess < MIN_GUESS_VALUE || guess > MAX_GUESS_VALUE) {
                     System.out.println("Your guess won't count. Guess again.");
                 } else if (guess < randomNumber) {
                     System.out.println("You guessed too low. Guess again.");
